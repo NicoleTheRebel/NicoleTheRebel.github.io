@@ -3,47 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shut the Podcast - Nicole The Rebel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Se hai un file CSS personalizzato -->
+    <title>Nicole The Rebel - Speaker e Voiceover Artist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reflux-framework/css/reflux.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 2em;
+            color: #000;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #ff4081;
+        }
+        .audio-player {
+            margin: 20px 0;
+        }
+        .audio-player audio {
+            width: 100%;
+            max-width: 600px;
+        }
+        .embed-container {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="text-center">
-        <h1>Benvenuto su Shut the Podcast</h1>
-        <p>Il podcast dove parlo di musica, eventi e notizie assurde!</p>
-    </header>
+    <!-- HEADER -->
+    <div class="content">
+        <h1>Benvenuto nel mondo di Nicole The Rebel</h1>
+        <p>Speaker radiofonica, voiceover artist e tanto altro. Ascolta i miei esempi di voce e scopri i miei progetti!</p>
 
-    <section id="player-audio" class="container text-center">
-        <h2>Esempio di Audio</h2>
-        <!-- Lettore Audio -->
-        <audio controls>
-            <source src="audio-esempio.mp3" type="audio/mpeg"> <!-- Sostituisci con il tuo file audio -->
-            Il tuo browser non supporta il tag audio.
-        </audio>
-    </section>
-
-    <section id="video" class="container text-center">
-        <h2>Guarda un Episodio del Podcast</h2>
-        <!-- Video YouTube -->
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KpbduJkiDnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/Gasgas1994/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nicole_the_rebel/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.instagram.com/shut_thepodcast/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@ShutThePodcast" target="_blank"><i class="fa fa-youtube"></i></a>
         </div>
-    </section>
 
-    <section id="social" class="container text-center">
-        <h2>Seguimi sui Social</h2>
-        <ul class="list-unstyled">
-            <li><a href="https://www.facebook.com/Gasgas1994/"><i class="fa fa-facebook"></i> Facebook</a></li>
-            <li><a href="https://www.instagram.com/nicole_the_rebel/"><i class="fa fa-instagram"></i> Instagram (Nicole)</a></li>
-            <li><a href="https://www.instagram.com/shut_thepodcast/"><i class="fa fa-instagram"></i> Instagram (Shut The Podcast)</a></li>
-            <li><a href="https://www.youtube.com/@ShutThePodcast"><i class="fa fa-youtube"></i> YouTube</a></li>
-        </ul>
-    </section>
+        <!-- Audio Example Player -->
+        <div class="audio-player">
+            <h2>Ascolta un esempio della mia voce</h2>
+            <audio controls>
+                <source src="esempio-audio.mp3" type="audio/mp3">
+                Il tuo browser non supporta il tag audio.
+            </audio>
+        </div>
 
-    <footer class="text-center">
-        <p>&copy; 2025 Nicole The Rebel. Tutti i diritti riservati.</p>
+        <!-- YouTube Embed Example -->
+        <div class="embed-container">
+            <h2>Guarda il mio esempio su YouTube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KpbduJkiDnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reflux-framework/js/reflux.min.js"></script>
+</body>
+</html>
+
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
