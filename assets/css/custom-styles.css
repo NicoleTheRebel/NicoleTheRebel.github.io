@@ -62,4 +62,40 @@
   padding: 0 !important;
 }
 
+#section4 {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 50px 0;
+}
+
+#section4 .section-heading h2 {
+  color: #000;
+}
+
+#section4 p {
+  color: #555;
+}
+
+#section4 .form-control {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#section4 input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#section4 input[type="submit"]:hover {
+  background-color: #444;
+}
+
 
