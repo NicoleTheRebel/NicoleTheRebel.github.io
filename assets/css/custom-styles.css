@@ -76,4 +76,47 @@
     padding-bottom: 100%; /* Questo crea un aspetto quadrato */
     object-fit: cover; /* Assicura che l'immagine si adatti senza distorsioni */
 }
+/* Forza le immagini ad essere quadrate */
+.my-work .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Rende l'immagine quadrata senza distorcerla */
+  display: block; /* Assicura che l'immagine venga visualizzata */
+  visibility: visible; /* Garantisce che l'immagine sia visibile */
+}
+
+/* Assicura che le immagini nei container abbiano la stessa altezza */
+.my-work .item {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 100%; /* Fa sì che il container sia quadrato */
+}
+
+/* Se c'è uno spazio tra le immagini, eliminiamolo */
+.my-work .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Imposta la visibilità delle immagini, se necessario */
+.my-work .item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* Aggiusta la dimensione delle immagini per ogni dispositivo */
+@media (max-width: 767px) {
+  .my-work .item {
+    height: 200px; /* Imposta un'altezza fissa per le immagini nei dispositivi piccoli */
+  }
+}
+
+@media (min-width: 768px) {
+  .my-work .item {
+    height: 300px; /* Imposta una dimensione per dispositivi medi */
+  }
+}
 
