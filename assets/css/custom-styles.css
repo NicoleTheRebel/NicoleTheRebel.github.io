@@ -270,6 +270,31 @@
   font-weight: 500 !important;
   font-size: 16px !important;
 }
+/* Servizi - sfondo più trasparente */
+.service-item {
+  background-color: rgba(0, 0, 0, 0.5) !important;  /* Sfondo trasparente (50%) */
+  border-radius: 10px !important;
+  padding: 20px !important;
+  transition: all 0.3s ease;
+}
+
+/* Titoli con bordi più evidenti */
+.service-item h4 {
+  color: #fff !important;
+  font-size: 22px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Descrizioni con un po' di padding per leggibilità */
+.service-item p {
+  color: #fff !important;
+  padding: 10px 12px !important;
+  font-size: 16px !important;
+  border-radius: 8px !important;
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Un po' più scuro per evidenziare */
+}
 
 
 
