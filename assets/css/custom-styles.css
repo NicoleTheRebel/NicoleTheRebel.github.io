@@ -56,4 +56,17 @@
 #section4 input[type="submit"]:hover {
   background-color: #444; /* Cambia colore quando il bottone è hoverato */
 }
+.my-work .item {
+  width: calc(33.333% - 20px);  /* Mantiene il layout a 3 colonne */
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.my-work .item img {
+  width: 100%; /* L'immagine occupa tutta la larghezza disponibile */
+  height: 100%; /* Imposta l'altezza uguale alla larghezza, creando un quadrato */
+  object-fit: cover; /* Rende l'immagine "riempire" il quadrato senza deformarla */
+  display: block; /* Rimuove eventuali spazi sotto l'immagine */
+}
 
