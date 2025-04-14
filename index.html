@@ -250,6 +250,14 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainMenu = document.getElementById('main-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mainMenu.classList.toggle('active');
+  });
+</script>
   </body>
 </html>
 
