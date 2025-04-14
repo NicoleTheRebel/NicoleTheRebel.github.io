@@ -203,7 +203,7 @@
 </section>
 
 
-      <section id="section4">
+      <section id="section4" class="section contact-me" data-section="section4">
   <div class="container">
     <div class="section-heading">
       <h2>Contattami</h2>
@@ -211,35 +211,37 @@
       <span>Per richieste di informazioni o collaborazioni, scrivimi qui sotto.</span>
     </div>
 
-    <!-- Form di contatto -->
-    <div class="form-wrapper">
-  <form id="contact" class="contact-form" action="" method="post">
-  <div class="row">
-    <div class="col-md-6">
-      <fieldset>
-        <input name="name" type="text" class="form-control" id="name" placeholder="Nome" required />
-      </fieldset>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form id="contact" action="" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <fieldset>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Nome" required />
+              </fieldset>
+            </div>
+            <div class="col-md-6">
+              <fieldset>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required />
+              </fieldset>
+            </div>
+            <div class="col-md-12">
+              <fieldset>
+                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Messaggio" required></textarea>
+              </fieldset>
+            </div>
+            <div class="col-md-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="button">Invia messaggio</button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="col-md-6">
-      <fieldset>
-        <input name="email" type="email" class="form-control" id="email" placeholder="Email" required />
-      </fieldset>
-    </div>
-    <div class="col-md-12">
-      <fieldset>
-        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Messaggio" required></textarea>
-      </fieldset>
-    </div>
-    <div class="col-md-12">
-      <fieldset>
-        <button type="submit" id="form-submit" class="button">Invia messaggio</button>
-      </fieldset>
-    </div>
-  </div>
-</form>
-
   </div>
 </section>
+
 
     </div>
 
