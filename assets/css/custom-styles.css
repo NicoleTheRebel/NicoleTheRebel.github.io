@@ -157,6 +157,64 @@
   background-color: #822e2e;
 }
 
+/* Imposta la griglia a 3 colonne per i servizi */
+.my-services .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;  /* Spaziatura tra le colonne */
+  justify-content: space-between;
+}
+
+/* Ogni box avrà la larghezza del 33.33% */
+.service-item {
+  width: calc(33.333% - 20px);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  min-height: auto;
+}
+
+.service-item h4 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.service-item p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Se vuoi che le icone occupino meno spazio */
+.service-icon {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+/* Hover effect per illuminare i box */
+.service-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* RENDI I BOX LARGHI SU DISPOSITIVI PIÙ PICCOLI (mobilità) */
+@media (max-width: 991px) {
+  .service-item {
+    width: calc(50% - 20px);  /* Due colonne su tablet */
+  }
+}
+
+@media (max-width: 767px) {
+  .service-item {
+    width: 100%;  /* Una colonna su dispositivi mobili */
+  }
+}
 
 
 
