@@ -99,5 +99,23 @@
 #section4 input[type="submit"]:hover {
   background-color: #444;
 }
+/* Regola per forzare le immagini a essere quadrate */
+.my-gallery img {
+  width: 100%;
+  height: 100%; /* Assicurati che l'immagine occupi tutta l'area quadrata */
+  object-fit: cover; /* Rende l'immagine quadrata senza deformarla */
+  display: block;
+  margin: 0 auto; /* Centra le immagini */
+}
+
+/* Spazio tra le righe delle immagini */
+.my-gallery .row {
+  margin-bottom: 10px; /* Riduce lo spazio tra le righe */
+}
+
+/* Aggiungi margine tra le immagini */
+.my-gallery .item {
+  margin-bottom: 10px; /* Riduce lo spazio tra le immagini */
+}
 
 
