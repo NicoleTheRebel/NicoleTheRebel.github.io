@@ -82,16 +82,20 @@
   margin-bottom: 40px;
 }
 
-/* Modifica qui per limitare la larghezza del form */
+/* Modifica per limitare la larghezza del form e centrarlo */
 #section4 form {
-  max-width: 800px; /* Impostiamo una larghezza massima */
-  margin: 0 auto; /* Centriamo il form */
+  max-width: 800px; /* Larghezza massima */
+  margin: 0 auto; /* Centrare il form */
+  padding: 20px; /* Distanza interna al form */
+  background-color: #fff; /* Colore di sfondo */
+  border-radius: 8px; /* Aggiungi angoli arrotondati */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
 }
 
+/* Modifica per controllare la larghezza dei campi input e textarea */
 #section4 .form-control {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
+  width: 100%; /* Impostiamo la larghezza al 100% del form */
+  max-width: 100%; /* Garantiamo che non superi il limite */
   margin-bottom: 20px;
   padding: 15px;
   font-size: 16px;
@@ -111,11 +115,13 @@
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 #section4 input[type="submit"]:hover {
   background-color: #444;
 }
+
 
 
 
