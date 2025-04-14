@@ -62,40 +62,35 @@
   padding: 0 !important;
 }
 
+/* Stili per la sezione contatti */
 #section4 {
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 50px 0;
+  background-color: #f4f4f4; /* Cambia il colore di sfondo, se necessario */
+  color: #333; /* Colore del testo */
 }
 
 #section4 .section-heading h2 {
-  color: #000;
+  color: #000; /* Colore del titolo */
 }
 
 #section4 p {
-  color: #555;
+  color: #555; /* Colore del testo nel paragrafo */
 }
 
-#section4 .form-control {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
+#section4 input, #section4 textarea {
+  border: 1px solid #ccc; /* Imposta il bordo dei campi del form */
+  background-color: #fff; /* Sfondo bianco per il form */
+  color: #333; /* Colore del testo nei campi del form */
 }
 
 #section4 input[type="submit"] {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
+  background-color: #000; /* Colore di sfondo del bottone */
+  color: #fff; /* Colore del testo nel bottone */
+  border: none; /* Rimuovi il bordo */
 }
 
 #section4 input[type="submit"]:hover {
-  background-color: #444;
+  background-color: #444; /* Cambia colore quando il bottone è hoverato */
 }
+
 
 
