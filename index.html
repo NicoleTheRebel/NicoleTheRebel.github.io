@@ -203,22 +203,33 @@
 </section>
 
 
-      <section id="section4" class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contattami</h2>
-            <div class="line-dec"></div>
-            <p>Per richieste di collaborazione o per avere maggiori informazioni, contattami via email.</p>
-          </div>
+      <section id="section4">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Contattami</h2>
+      <div class="line-dec"></div>
+      <span>Per richieste di informazioni o collaborazioni, scrivimi qui sotto.</span>
+    </div>
 
-          <form action="#" method="post">
-            <input type="text" name="name" placeholder="Il tuo nome" required />
-            <input type="email" name="email" placeholder="La tua email" required />
-            <textarea name="message" placeholder="Il tuo messaggio" required></textarea>
-            <input type="submit" value="Invia" />
-          </form>
+    <!-- Form di contatto -->
+    <form action="#" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Nome" required>
         </div>
-      </section>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-12">
+          <textarea name="message" class="form-control" placeholder="Messaggio" rows="6" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <input type="submit" value="Invia" class="btn-submit">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 
     </div>
 
