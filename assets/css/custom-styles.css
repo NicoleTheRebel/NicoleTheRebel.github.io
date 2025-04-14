@@ -1,22 +1,22 @@
-  <style>
-    .my-work .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: space-between;
-    }
-    .my-work .item {
-      width: calc(33.333% - 20px);  /* Aggiusta la larghezza a 3 colonne */
-      margin-bottom: 30px;
-      overflow: hidden;
-    }
-    .my-work .item img {
-      width: 100%;
-      height: auto;
-      transition: transform 0.3s ease;
-    }
-    .my-work .item:hover img {
-      transform: scale(1.05);
-    }
-  </style>
-</head>
+.my-work .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.my-work .item {
+  width: calc(33.333% - 20px);  /* Aggiusta la larghezza a 3 colonne */
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.my-work .item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.my-work .item:hover img {
+  transform: scale(1.05);
+}
