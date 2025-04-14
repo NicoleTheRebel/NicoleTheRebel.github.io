@@ -69,4 +69,11 @@
   object-fit: cover; /* Rende l'immagine "riempire" il quadrato senza deformarla */
   display: block; /* Rimuove eventuali spazi sotto l'immagine */
 }
+/* Forza le immagini quadrate */
+.my-work .item img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Questo crea un aspetto quadrato */
+    object-fit: cover; /* Assicura che l'immagine si adatti senza distorsioni */
+}
 
