@@ -175,6 +175,66 @@
   position: relative;
   z-index: 2;
 }
+/* Stile del bottone hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+  border: none;
+}
+
+/* Menu principale */
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Link del menu */
+.main-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  /* Nascondi il menu su schermi piccoli, visibile solo se attivato */
+  .main-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Mostra il bottone hamburger su dispositivi mobili */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Quando il menu è attivo, visualizzalo */
+  .main-menu.active {
+    display: flex;
+  }
+
+  /* Personalizza l'aspetto dei link nel menu mobile */
+  .main-menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-menu li a {
+    padding: 10px 0;
+  }
+}
 
 
 
