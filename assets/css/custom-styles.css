@@ -215,6 +215,17 @@
     width: 100%;  /* Una colonna su dispositivi mobili */
   }
 }
+.service-item h4 {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.service-item p {
+  background-color: rgba(0, 0, 0, 0.6); /* sfondo nero trasparente */
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
 
 
 
