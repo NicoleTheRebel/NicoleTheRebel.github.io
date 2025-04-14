@@ -1,3 +1,4 @@
+/* Galleria responsive a 3 colonne */
 .my-work .row {
   display: flex;
   flex-wrap: wrap;
@@ -6,7 +7,7 @@
 }
 
 .my-work .item {
-  width: calc(33.333% - 20px);  /* Aggiusta la larghezza a 3 colonne */
+  width: calc(33.333% - 20px);
   margin-bottom: 30px;
   overflow: hidden;
 }
@@ -19,4 +20,10 @@
 
 .my-work .item:hover img {
   transform: scale(1.05);
+}
+
+/* Override del comportamento Bootstrap che rovina il layout */
+.my-work .col-md-4 {
+  width: 100% !important;
+  padding: 0 !important;
 }
