@@ -232,6 +232,26 @@
   padding: 20px;
   border-radius: 16px;
 }
+.service-item h4 {
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
+}
+
+.service-item p {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.service-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
 
 
 
