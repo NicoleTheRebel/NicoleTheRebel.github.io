@@ -212,22 +212,31 @@
     </div>
 
     <!-- Form di contatto -->
-    <form action="#" method="post">
-      <div class="row">
-        <div class="col-md-6">
-          <input type="text" name="name" class="form-control" placeholder="Nome" required>
-        </div>
-        <div class="col-md-6">
-          <input type="email" name="email" class="form-control" placeholder="Email" required>
-        </div>
-        <div class="col-md-12">
-          <textarea name="message" class="form-control" placeholder="Messaggio" rows="6" required></textarea>
-        </div>
-        <div class="col-md-12">
-          <input type="submit" value="Invia" class="btn-submit">
-        </div>
-      </div>
-    </form>
+    <form id="contact" class="contact-form" action="" method="post">
+  <div class="row">
+    <div class="col-md-6">
+      <fieldset>
+        <input name="name" type="text" class="form-control" id="name" placeholder="Nome" required />
+      </fieldset>
+    </div>
+    <div class="col-md-6">
+      <fieldset>
+        <input name="email" type="email" class="form-control" id="email" placeholder="Email" required />
+      </fieldset>
+    </div>
+    <div class="col-md-12">
+      <fieldset>
+        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Messaggio" required></textarea>
+      </fieldset>
+    </div>
+    <div class="col-md-12">
+      <fieldset>
+        <button type="submit" id="form-submit" class="button">Invia messaggio</button>
+      </fieldset>
+    </div>
+  </div>
+</form>
+
   </div>
 </section>
 
