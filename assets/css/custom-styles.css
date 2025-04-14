@@ -214,18 +214,25 @@
   .service-item {
     width: 100%;  /* Una colonna su dispositivi mobili */
   }
-}
 .service-item h4 {
   color: white;
-  text-shadow: 2px 2px 4px black;
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
+}
+.service-item p {
+  background-color: rgba(0, 0, 0, 0.7); /* più opaco */
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.service-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
 }
 
-.service-item p {
-  background-color: rgba(0, 0, 0, 0.6); /* sfondo nero trasparente */
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-}
 
 
 
