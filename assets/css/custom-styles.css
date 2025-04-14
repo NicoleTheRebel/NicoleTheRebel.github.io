@@ -84,7 +84,7 @@
 
 /* Modifica per limitare la larghezza del form e centrarlo */
 #section4 form {
-  max-width: 800px; /* Larghezza massima */
+  max-width: 600px; /* Larghezza massima */
   margin: 0 auto; /* Centrare il form */
   padding: 20px; /* Distanza interna al form */
   background-color: #fff; /* Colore di sfondo */
