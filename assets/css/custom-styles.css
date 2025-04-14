@@ -62,35 +62,55 @@
   padding: 0 !important;
 }
 
-/* Stili per la sezione contatti */
+/* --- Sezione contatti --- */
 #section4 {
-  background-color: #f4f4f4; /* Cambia il colore di sfondo, se necessario */
-  color: #333; /* Colore del testo */
+  background-color: #f4f4f4; /* Colore di sfondo chiaro */
+  padding: 50px 0; /* Aggiungi padding per distanziare il contenuto */
 }
 
 #section4 .section-heading h2 {
-  color: #000; /* Colore del titolo */
+  color: #000; /* Titolo nero */
+  text-align: center; /* Allinea il titolo al centro */
+  font-size: 36px;
+  margin-bottom: 20px; /* Distanza inferiore */
 }
 
 #section4 p {
-  color: #555; /* Colore del testo nel paragrafo */
+  color: #555; /* Colore del testo più chiaro */
+  text-align: center; /* Allinea il testo al centro */
+  font-size: 18px;
+  margin-bottom: 40px; /* Distanza sotto il paragrafo */
 }
 
-#section4 input, #section4 textarea {
-  border: 1px solid #ccc; /* Imposta il bordo dei campi del form */
-  background-color: #fff; /* Sfondo bianco per il form */
-  color: #333; /* Colore del testo nei campi del form */
+#section4 .form-control {
+  border: 1px solid #ccc; /* Colore del bordo dei campi di input */
+  background-color: #fff; /* Colore di sfondo dei campi di input */
+  color: #333; /* Colore del testo */
+  margin-bottom: 20px; /* Distanza tra i campi */
+  padding: 15px; /* Aggiungi padding per rendere i campi più larghi */
+  font-size: 16px;
+}
+
+#section4 .form-control:focus {
+  border-color: #000; /* Colore del bordo al focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Aggiungi ombra */
 }
 
 #section4 input[type="submit"] {
-  background-color: #000; /* Colore di sfondo del bottone */
-  color: #fff; /* Colore del testo nel bottone */
+  background-color: #000; /* Colore di sfondo del pulsante */
+  color: #fff; /* Colore del testo del pulsante */
   border: none; /* Rimuovi il bordo */
+  padding: 15px 30px; /* Padding per un pulsante più grande */
+  font-size: 18px; /* Aumenta la dimensione del testo */
+  cursor: pointer; /* Cambia il cursore quando passa sopra */
+  width: 100%; /* Fai in modo che il pulsante occupi tutta la larghezza */
+  transition: background-color 0.3s ease; /* Effetto di transizione */
 }
 
 #section4 input[type="submit"]:hover {
-  background-color: #444; /* Cambia colore quando il bottone è hoverato */
+  background-color: #444; /* Colore di sfondo al passaggio del mouse */
 }
+
 
 
 
