@@ -346,5 +346,32 @@
   }
 }
 
+.section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Gap tra le immagini */
+}
+
+.item {
+    width: 33.33%; /* Tre immagini per riga */
+    padding-bottom: 33.33%; /* Proporzione quadrata (100% / 3 = 33.33%) */
+    position: relative;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fissa l'immagine al quadrato */
+}
+
+.item p {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+}
 
 
