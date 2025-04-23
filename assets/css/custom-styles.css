@@ -161,21 +161,7 @@
   background-color: #444;
 }
 
-/* Overlay per sfondo scuro sezioni (se serve) */
-#section2::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-#section2 .container {
-  position: relative;
-  z-index: 2;
-}
-/* Bottone hamburger */
+/* --- HAMBURGER & MOBILE MENU --- */
 #menu-toggle {
   display: none;
   font-size: 28px;
@@ -190,14 +176,12 @@
   z-index: 1100;
 }
 
-/* Menu principale */
 .main-menu {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-/* Link del menu */
 .main-menu li a {
   color: #fff;
   text-decoration: none;
@@ -205,14 +189,12 @@
   transition: background-color 0.3s;
 }
 
-/* Menu mobile */
 @media (max-width: 768px) {
-  /* Mostra il bottone hamburger */
+  /* Mostra hamburger */
   #menu-toggle {
     display: block;
   }
-
-  /* Menu nascosto di default su mobile */
+  /* Nascondi menu desktop e visualizza mobile */
   .main-menu {
     display: none;
     flex-direction: column;
@@ -224,31 +206,16 @@
     padding: 10px 0;
     z-index: 1000;
   }
-
-  /* Mostra il menu quando attivo */
   .main-menu.active {
     display: flex;
   }
-
   .main-menu li {
     text-align: center;
     padding: 10px 0;
   }
-
   .main-menu li a {
-    color: #fff;
     padding: 10px;
     display: block;
   }
 }
-@media (max-width: 768px) {
-  /* Riduci lo spazio orizzontale fra gli item della galleria */
-  .my-work .row {
-    gap: 15px;    /* prima era 30px, ora dimezziamo */
-  }
 
-  /* Fai diventare le didascalie bianche (o il colore che preferisci) */
-  .my-work .item p {
-    color: #fff;  /* sostituisci con il colore che vuoi */
-  }
-}
