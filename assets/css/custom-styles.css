@@ -49,33 +49,28 @@
   padding: 40px;
 }
 
-/* --- GALLERIA FOTO --- */
+/* --- GALLERIA FOTO: 3 COLONNE, QUADRATE, GAP RIDOTTO --- */
 .my-work .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;           /* spazio minore tra le foto */
   justify-content: space-between;
-  margin-left: 270px;
+  margin-left: 270px;  /* conserva lo spostamento per sidebar */
   padding: 50px 20px;
 }
 
 .my-work .item {
-  width: calc(33.333% - 20px);
-  margin-bottom: 30px;
+  flex: 0 0 calc(33.333% - 6.666px); /* 3 colonne meno gap */
+  margin-bottom: 10px;               /* spazio sotto */
   position: relative;
-  padding-bottom: 100%;
+  padding-bottom: 100%;              /* altezza = larghezza */
   overflow: hidden;
-}
-
-.my-work .item a,
-.my-work .item img {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .my-work .item img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
   transition: transform 0.3s ease;
 }
 
@@ -84,8 +79,8 @@
 }
 
 .my-work .item p {
-  margin-top: 8px;
-  font-size: 16px;
+  margin-top: 5px;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
   color: #333;
@@ -93,16 +88,22 @@
 
 @media (max-width: 991px) {
   .my-work .item {
-    width: calc(50% - 15px);
+    flex: 0 0 calc(50% - 5px);  /* 2 colonne su tablet */
   }
   .my-work .row {
     margin-left: 0;
+    gap: 8px;
   }
 }
 
 @media (max-width: 767px) {
   .my-work .item {
-    width: 100%;
+    flex: 0 0 100%;             /* 1 colonna su mobile */
+    margin-bottom: 8px;
+  }
+  .my-work .row {
+    margin-left: 0;
+    gap: 6px;
   }
 }
 
