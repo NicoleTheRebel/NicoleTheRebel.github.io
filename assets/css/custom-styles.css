@@ -3,6 +3,7 @@
   margin-left: 270px;
   padding: 40px;
 }
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -57,7 +58,7 @@
 .my-work .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;           /* spazio minore tra le foto */
+  gap: 10px;           /* spazio tra le immagini */
   justify-content: space-between;
   padding: 50px 20px;
 }
@@ -66,7 +67,7 @@
   flex: 0 0 calc(33.333% - 6.666px); /* 3 colonne meno gap */
   margin-bottom: 10px;               /* spazio sotto */
   position: relative;
-  padding-bottom: 100%;              /* altezza = larghezza */
+  padding-bottom: 100%;              /* altezza uguale a larghezza per ottenere un quadrato */
   overflow: hidden;
 }
 
@@ -250,24 +251,25 @@
     padding: 20px;
   }
 }
-/* Ritornare alle immagini quadrate nella galleria */
+
+/* --- GALLERIA FOTO --- */
 .my-work .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;               /* spazio ridotto, a tua scelta */
+  gap: 10px;               /* Spazio tra le immagini */
   justify-content: space-between;
 }
 
 .my-work .item {
-  flex: 0 0 calc(33.333% - 6.666px);
+  flex: 0 0 calc(33.333% - 6.666px);  /* 3 colonne, ridotto gap */
   position: relative;
-  padding-bottom: 100%;    /* forza quadrato */
+  padding-bottom: 100%;    /* Altezza = larghezza (quadrato) */
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 5px;      /* Spazio tra le righe */
 }
 
 .my-work .item img {
-  position: absolute;      /* posiziona l'immagine nel container quadrato */
+  position: absolute;      /* Posiziona l'immagine nel quadrato */
   top: 0;
   left: 0;
   width: 100%;
@@ -281,35 +283,25 @@
 }
 
 .my-work .item p {
-  position: relative;      /* riporta la didascalia sotto */
-  margin-top: calc(100% + 5px);
+  position: relative;
+  margin-top: 4px; /* Spazio tra l'immagine e la descrizione */
   font-size: 14px;
   text-align: center;
-  color: #FFFFFF;
+  color: #333;
 }
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .my-work .item {
-    flex: 0 0 calc(50% - 5px);
+    flex: 0 0 calc(50% - 5px);  /* 2 colonne su tablet */
   }
 }
 
 @media (max-width: 767px) {
   .my-work .item {
-    flex: 0 0 100%;
+    flex: 0 0 100%;             /* 1 colonna su mobile */
   }
 }
-/* Riduci spazio verticale nella galleria */
-.my-work .item {
-  margin-bottom: 5px !important;    /* prima era 10px, ora 5px */
-}
 
-.my-work .item p {
-  margin-top: 4px !important;       /* prima era calc(100% + 5px), ora solo 4px */
-  /* se usi la tecnica absolute-position, invece: */
-  position: static;
-  margin: 4px 0 0 0;                 /* 4px sopra, 0 sotto */
-}
 
 
