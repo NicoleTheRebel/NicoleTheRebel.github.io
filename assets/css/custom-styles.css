@@ -175,8 +175,8 @@
   position: relative;
   z-index: 2;
 }
-/* Stile del bottone hamburger */
-.menu-toggle {
+/* Bottone hamburger */
+#menu-toggle {
   display: none;
   font-size: 28px;
   color: #fff;
@@ -184,6 +184,10 @@
   padding: 10px;
   background: transparent;
   border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1100;
 }
 
 /* Menu principale */
@@ -201,54 +205,14 @@
   transition: background-color 0.3s;
 }
 
-/* Media query per dispositivi mobili */
+/* Menu mobile */
 @media (max-width: 768px) {
-  /* Nascondi il menu su schermi piccoli, visibile solo se attivato */
-  .main-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  /* Mostra il bottone hamburger su dispositivi mobili */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Quando il menu è attivo, visualizzalo */
-  .main-menu.active {
-    display: flex;
-  }
-
-  /* Personalizza l'aspetto dei link nel menu mobile */
-  .main-menu li {
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .main-menu li a {
-    padding: 10px 0;
-  }
-}
-/* Stile per l'icona del menu hamburger */
-#menu-toggle {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-/* Stile per il menu su dispositivi mobili */
-@media (max-width: 768px) {
+  /* Mostra il bottone hamburger */
   #menu-toggle {
     display: block;
   }
 
+  /* Menu nascosto di default su mobile */
   .main-menu {
     display: none;
     flex-direction: column;
@@ -261,6 +225,7 @@
     z-index: 1000;
   }
 
+  /* Mostra il menu quando attivo */
   .main-menu.active {
     display: flex;
   }
@@ -272,14 +237,7 @@
 
   .main-menu li a {
     color: #fff;
-    text-decoration: none;
     padding: 10px;
     display: block;
   }
 }
-
-
-
-
-
-
