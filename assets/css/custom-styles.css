@@ -241,3 +241,14 @@
     display: block;
   }
 }
+@media (max-width: 768px) {
+  /* Riduci lo spazio orizzontale fra gli item della galleria */
+  .my-work .row {
+    gap: 15px;    /* prima era 30px, ora dimezziamo */
+  }
+
+  /* Fai diventare le didascalie bianche (o il colore che preferisci) */
+  .my-work .item p {
+    color: #fff;  /* sostituisci con il colore che vuoi */
+  }
+}
