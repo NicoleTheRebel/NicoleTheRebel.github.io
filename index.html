@@ -31,7 +31,7 @@
               <h4>Nicole The Rebel</h4>
               <span>Speaker & Voiceover Artist</span>
             </div>
-            <div id="menu-toggle">&#9776;</div>
+            <div class="menu-toggle">&#9776;</div>
             <nav class="main-nav" role="navigation">
                 <!-- Bottone per il menu mobile -->
              <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -258,8 +258,8 @@
   menuToggle.addEventListener('click', () => {
     mainMenu.classList.toggle('active');
   });
-    <script>
-  const menuToggle = document.getElementById('menu-toggle');
+   <script>
+  const menuToggle = document.querySelector('.menu-toggle');
   const mainMenu = document.querySelector('.main-menu');
 
   menuToggle.addEventListener('click', () => {
