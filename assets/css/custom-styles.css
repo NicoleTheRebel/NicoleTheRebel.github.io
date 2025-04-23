@@ -1,9 +1,62 @@
+/* --- MENU LATERALE --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #b30000;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.sidebar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 3px solid #fff;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav a:hover {
+  color: #ffcccc;
+}
+
+/* --- CONTENUTO PRINCIPALE --- */
+.main-content {
+  margin-left: 250px;
+  padding: 40px;
+}
+
 /* --- GALLERIA FOTO --- */
 .my-work .row {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+  margin-left: 270px;
+  padding: 50px 20px;
 }
 
 .my-work .item {
@@ -42,6 +95,9 @@
   .my-work .item {
     width: calc(50% - 15px);
   }
+  .my-work .row {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -56,6 +112,8 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+  margin-left: 270px;
+  padding: 50px 20px;
 }
 
 .service-item {
@@ -96,6 +154,9 @@
   .service-item {
     width: calc(50% - 20px);
   }
+  .my-services .row {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -107,8 +168,9 @@
 /* --- SEZIONE CONTATTI --- */
 #section4 {
   background-color: #f4f4f4;
-  padding: 50px 0;
+  padding: 50px 20px;
   text-align: center;
+  margin-left: 270px;
 }
 
 #section4 .section-heading h2 {
@@ -161,61 +223,30 @@
   background-color: #444;
 }
 
-/* --- HAMBURGER & MOBILE MENU --- */
-#menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  background: transparent;
-  border: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1100;
-}
-
-.main-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.main-menu li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 12px;
-  transition: background-color 0.3s;
-}
-
+/* --- RESPONSIVE SIDEBAR --- */
 @media (max-width: 768px) {
-  /* Mostra hamburger */
-  #menu-toggle {
-    display: block;
-  }
-  /* Nascondi menu desktop e visualizza mobile */
-  .main-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
+  .sidebar {
+    position: relative;
     width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
+    height: auto;
+    padding: 15px 10px;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  .main-menu.active {
-    display: flex;
+
+  .sidebar img {
+    display: none;
   }
-  .main-menu li {
-    text-align: center;
-    padding: 10px 0;
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 10px;
   }
-  .main-menu li a {
-    padding: 10px;
-    display: block;
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
   }
 }
+
 
