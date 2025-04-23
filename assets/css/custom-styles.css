@@ -1,4 +1,8 @@
 /* --- MENU LATERALE --- */
+.main-content {
+  margin-left: 270px;
+  padding: 40px;
+}
 .sidebar {
   position: fixed;
   top: 0;
@@ -55,7 +59,6 @@
   flex-wrap: wrap;
   gap: 10px;           /* spazio minore tra le foto */
   justify-content: space-between;
-  margin-left: 270px;  /* conserva lo spostamento per sidebar */
   padding: 50px 20px;
 }
 
@@ -113,7 +116,6 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  margin-left: 270px;
   padding: 50px 20px;
 }
 
@@ -171,7 +173,6 @@
   background-color: #f4f4f4;
   padding: 50px 20px;
   text-align: center;
-  margin-left: 270px;
 }
 
 #section4 .section-heading h2 {
