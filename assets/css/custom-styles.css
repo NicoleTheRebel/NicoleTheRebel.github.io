@@ -54,24 +54,26 @@
   padding: 40px;
 }
 
-/* --- GALLERIA FOTO: 3 COLONNE, QUADRATE, GAP RIDOTTO --- */
+/* --- GALLERIA FOTO: 3 COLONNE, QUADRATE, DIDASCALIE BIANCHE --- */
 .my-work .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;               
+  gap: 10px;               /* Spazio tra le immagini */
   justify-content: space-between;
+  padding: 0;              /* Rimuovi padding ereditato */
+  margin: 0;               /* Rimuovi margin ereditato */
 }
 
 .my-work .item {
-  flex: 0 0 calc(33.333% - 6.666px);  
+  flex: 0 0 calc(33.333% - 6.666px);  /* 3 colonne, ridotto gap */
   position: relative;
-  padding-bottom: 100%;    /* chiave: container quadrato */
+  padding-bottom: 100%;    /* Altezza = larghezza (quadrato) */
   overflow: hidden;
-  margin-bottom: 5px;      
+  margin-bottom: 5px;      /* Spazio tra le righe */
 }
 
 .my-work .item img {
-  position: absolute;      
+  position: absolute;      /* Posiziona l'immagine nel quadrato */
   top: 0;
   left: 0;
   width: 100%;
@@ -81,27 +83,31 @@
 }
 
 .my-work .item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.05);  /* Effetto zoom sull'immagine al passaggio del mouse */
 }
 
 .my-work .item p {
-  position: relative;
-  margin-top: 4px;         
+  position: absolute;      /* Posiziona il testo dentro il container */
+  bottom: 10px;            /* Spazio dal fondo */
+  left: 0;
+  right: 0;
   font-size: 14px;
+  font-weight: 600;
   text-align: center;
-  color: #333;
+  color: #fff;             /* Didascalia bianca */
+  margin: 0;
 }
 
-/* Responsive */
+/* --- RESPONSIVE --- */
 @media (max-width: 991px) {
   .my-work .item {
-    flex: 0 0 calc(50% - 5px);
+    flex: 0 0 calc(50% - 5px);  /* 2 colonne su tablet */
   }
 }
 
 @media (max-width: 767px) {
   .my-work .item {
-    flex: 0 0 100%;
+    flex: 0 0 100%;             /* 1 colonna su mobile */
   }
 }
 
@@ -246,132 +252,5 @@
   }
 }
 
-/* --- GALLERIA FOTO --- */
-.my-work .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;               /* Spazio tra le immagini */
-  justify-content: space-between;
-}
-
-.my-work .item {
-  flex: 0 0 calc(33.333% - 6.666px);  /* 3 colonne, ridotto gap */
-  position: relative;
-  padding-bottom: 100%;    /* Altezza = larghezza (quadrato) */
-  overflow: hidden;
-  margin-bottom: 5px;      /* Spazio tra le righe */
-}
-
-.my-work .item img {
-  position: absolute;      /* Posiziona l'immagine nel quadrato */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.my-work .item:hover img {
-  transform: scale(1.05);
-}
-
-.my-work .item p {
-  position: relative;
-  margin-top: 4px; /* Spazio tra l'immagine e la descrizione */
-  font-size: 14px;
-  text-align: center;
-  color: #333;
-}
-
-/* Responsive adjustments */
-@media (max-width: 991px) {
-  .my-work .item {
-    flex: 0 0 calc(50% - 5px);  /* 2 colonne su tablet */
-  }
-}
-
-@media (max-width: 767px) {
-  .my-work .item {
-    flex: 0 0 100%;             /* 1 colonna su mobile */
-  }
-}
-/* ===== GALLERIA FOTO: 3 COLONNE, QUADRATE, GAP 10px ===== */
-.my-work .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;            /* spazio tra le foto */
-  justify-content: space-between;
-  padding: 0;           /* togli padding ereditato */
-  margin: 0;            /* togli margin ereditato */
-}
-
-.my-work .item {
-  flex: 0 0 calc(33.333% - 6.666px); /* tre colonne meno gap */
-  position: relative;
-  padding-bottom: 100%; /* quadrato perfetto */
-  overflow: hidden;
-}
-
-.my-work .item img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.my-work .item:hover img {
-  transform: scale(1.05);
-}
-
-.my-work .item p {
-  margin: 8px 0 0;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  color: #333;
-}
-
-/* ---- responsive ---- */
-@media (max-width: 991px) {
-  .my-work .item {
-    flex: 0 0 calc(50% - 5px); /* due colonne */
-  }
-}
-@media (max-width: 767px) {
-  .my-work .item {
-    flex: 0 0 100%;            /* una colonna */
-  }
-}
-
-.section .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Gap tra le immagini */
-}
-
-.item {
-    width: 33.33%; /* Tre immagini per riga */
-    padding-bottom: 33.33%; /* Proporzione quadrata (100% / 3 = 33.33%) */
-    position: relative;
-}
-
-.item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Fissa l'immagine al quadrato */
-}
-
-.item p {
-    text-align: center;
-    margin-top: 10px;
-    color: #fff;
-    font-size: 14px;
-}
 
 
